@@ -1,0 +1,24 @@
+.user-details {
+    width: 100%;
+    display: flex;
+}
+.form-container {
+    .form-alert {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.user-details {
+    .thumbnail {
+        img {
+            width: auto;
+            height: auto;
+            border: 2px solid;
+            border-radius: 50%;
+            max-width: 210px;
+            width: 100%;
+        }
+    }
+}

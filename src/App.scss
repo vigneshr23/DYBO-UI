@@ -1,0 +1,113 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+@import "./assets/styles/variables";
+
+$default: #0d6efd;
+$deaultDarkBg: #211a23;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-size: 16px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: calc(10px + 2vmin);
+  width: 100%;
+  color: white;
+
+  .navigation {
+    width: 100%;
+    border-bottom: 1px solid;
+    padding: 1rem 0;
+    .navigation-navbar {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      .navigation-nav-item {
+        flex: 3;
+        a {
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .form-switch {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        .form-check-label {
+          font-size: 1rem;
+          margin: 0.3rem;
+          color: $default;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    width: 100%;
+    position: relative;
+  }
+  .dark {
+    background-color: $deaultDarkBg;
+    border-color: white;
+  }
+  .light {
+    border-color: black;
+    color: $default;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.home {
+  color: $default;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  font-size: 75%;
+  span {
+    margin: 0 0.6rem;
+  }
+}
